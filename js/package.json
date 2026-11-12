@@ -1,0 +1,60 @@
+{
+  "name": "@tavia/sdk",
+  "version": "0.9.0",
+  "description": "Tavia realtime voice agents, speech-to-text and text-to-speech for browsers and Node",
+  "license": "Apache-2.0",
+  "homepage": "https://tavialabs.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tavia-labs/tavia-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tavia-labs/tavia-sdk/issues"
+  },
+  "keywords": [
+    "tavia",
+    "voice",
+    "voice-agent",
+    "realtime",
+    "speech-to-text",
+    "text-to-speech",
+    "websocket",
+    "audio"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "sideEffects": false,
+  "engines": {
+    "node": ">=22"
+  },
+  "peerDependencies": {
+    "ws": ">=8"
+  },
+  "peerDependenciesMeta": {
+    "ws": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": false,
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p . && tsc --noEmit -p tsconfig.build.json",
+    "build": "node scripts/build.mjs",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "24.19.2",
+    "eslint": "10.12.0",
+    "globals": "17.13.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.71.2",
+    "vite": "7.3.7",
+    "vitest": "4.1.11"
+  }
+}

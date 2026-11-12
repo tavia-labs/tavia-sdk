@@ -1,0 +1,19 @@
+{
+  "version": "0.9.0",
+  "npm": "@tavia/sdk",
+  "pypi": "tavia",
+  "license": "Apache-2.0",
+  "homepage": "https://tavialabs.com",
+  "docs": "https://app.tavialabs.com/docs",
+  "repository": "https://github.com/tavia-labs/tavia-sdk",
+  "keywords": [
+    "tavia",
+    "voice",
+    "voice-agent",
+    "realtime",
+    "speech-to-text",
+    "text-to-speech",
+    "websocket",
+    "audio"
+  ]
+}
